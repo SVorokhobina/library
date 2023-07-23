@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1440px;
+    height: auto;
+}
