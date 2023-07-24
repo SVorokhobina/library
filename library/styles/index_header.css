@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 90px;
+    background-color: #0C0C0E;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+nav {
+    display: inline-block;
+    height: 50px;
+    margin-left: auto;
+}
+
+.header_menu {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.header_menu_item {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.header_menu_gap-required {
+    margin-right: 30px;
+}
+
+.header_menu_item:link, .header_menu_item:visited {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.header_menu_item:hover {
+    color: #FFFFFF;
+    text-decoration-line: underline;
+}
+  
+.header_menu_item:active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+header img {
+    margin-right: 20px;
+    margin-left: 40px;
+}
