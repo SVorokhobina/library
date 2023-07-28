@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #FFFFFF;
+    background-color: lightgrey;
 }
 
 .project-container {
@@ -11,4 +11,32 @@ body {
     height: auto;
 }
 
+/*Styles for h2 headings in main sections About, Favorites, 
+Coffee Shop, Our Contacts, Library Cards*/
+h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #0C0C0E;
+}
 
+h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    bottom: -20px;
+    left:50%;
+    transform: translate(-50%, 0%);
+    background-color: #0C0C0E;
+}

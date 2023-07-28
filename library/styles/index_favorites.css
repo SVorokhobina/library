@@ -1,0 +1,255 @@
+.favorites {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 1440px;
+    height: 1439px;
+    background-color: #FFFFFF;
+}
+
+.favorites_choose-season_area {
+    margin: 61px 0px 0px 0px;
+}
+
+#favorites_choose-season_header {
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+}
+
+.favorites_buttons-area {
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+.favorites_single-button-container {
+    display: block-inline;
+    position: relative;
+    padding: 5px 10px 5px 42px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000000;
+}
+
+/* To hide default radio buttons */
+.favorites_single-button-container input { 
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* To create custom radio buttons */
+.season_checkmark {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 2px solid #000000; 
+    background-color: #FFFFFF;    
+}
+
+/* To create the [display: none] indicator inside the radio button */
+.season_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 7px;
+    height: 7px;    
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+}
+
+/* Temporary solution starts; to be replaced later with JS */
+#winter .season_checkmark:after {
+    display: block;
+    background: #000000;
+}
+
+#winter {
+    font-weight: 700;
+}
+
+#winter, #spring, #summer {
+    margin-right: 70px;
+}
+/* Temporary solution ends */
+
+
+/* To finish later with JS*/
+/* To show the indicator inside the radio button when the mouse is hovered
+.favorites_single-button-container:hover input ~ .season_checkmark:after {
+    display: block;
+    background: #bababa;
+}
+  
+To show the indicator when the radio button is checked
+.favorites_single-button-container input:checked ~ .season_checkmark:after {
+    display: block;
+    background: #000000;
+} */
+
+
+.favorites_books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.favorites_book-container {
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    width: 590px;
+    height: 555px;
+    margin-top: 40px;
+}
+
+.favorites_book-container img {
+    position: absolute;
+    left: 390px;
+    top: 255px;
+    width: 200px;
+    height: 300px;
+    z-index: 10;
+}
+
+.favorites_book_framed-description {
+    width: 548px;
+    height: 553px;
+    margin: 0px;
+    border: 1px solid #000000;
+}
+
+.favorites_staff-picks {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 20px;    
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.favorites_staff-picks::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    height: 1px;
+    width: 60px;
+    background-color: #BB945F;
+}
+
+.book_name {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.book_auther {
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.book_description {
+    width: 356px;
+    height: 320px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.book_buy-button {
+    width: 73px;
+    height: 28px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+.book_buy-button:hover {
+    border: 1px solid #BB945F;
+    border-radius: 2px;
+    background: #BB945F;
+}
+
+.book_own-button {
+    width: 73px;
+    height: 28px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid #BB945F;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    
+    color: #BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    cursor: text;
+}
+
+.books_not-shown {
+    display: none;
+}
