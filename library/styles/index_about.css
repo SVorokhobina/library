@@ -1,0 +1,79 @@
+.about {
+    display: flex;
+    flex-flow: column nowrap;    
+    width: 1440px;
+    height: 837px;
+    background-color: #FFFFFF;
+}
+
+/*Styles for h2 headings are described in index.css*/
+
+#about_text {
+    margin-top: 61px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color: #000000;
+}
+
+.about_carousel_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 1400px;
+    height: 560px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about_carousel_photos {
+    display: inline-block;
+    height: 100%;
+    width: 450px;
+}
+
+#about_carousel_photo_1 {
+    background-image: url("../images/about_photos_1_girl.png");
+}
+
+#about_carousel_photo_2 {
+    background-image: url("../images/about_photos_2_busts.png");
+}
+
+#about_carousel_photo_3 {
+    background-image: url("../images/about_photos_3_curved-shelves.png");
+}
+
+.about_carousel_pagination {
+    display: inline-block;
+    width: 78px;
+    height: 26px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_carousel_pagination_clickable-area {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0px;
+}
+
+.about_carousel_pagination_button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #0C0C0E;
+}
+
+.about_carousel_pagination_button_active {
+    background-color: #BB945F;
+}
