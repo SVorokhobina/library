@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/index_favorites.css">
     <link rel="stylesheet" href="./styles/index_coffee_shop.css">
     <link rel="stylesheet" href="./styles/index_contacts.css">
+    <link rel="stylesheet" href="./styles/index_library_card.css">
     <link rel="stylesheet" href="./styles/index_footer.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <meta charset="utf-8">
@@ -24,7 +25,7 @@
                     <li class="header_menu_gap-required"><a class="header_menu_item" href="#favorites_section-name">Favorites</a></li>
                     <li class="header_menu_gap-required"><a class="header_menu_item" href="#coffee-shop_section-name">Coffee shop</a></li>
                     <li class="header_menu_gap-required"><a class="header_menu_item" href="#contacts_section-name">Contacts</a></li>
-                    <li><a class="header_menu_item" href="#Library-Card_section-name">Library Card</a></li>
+                    <li><a class="header_menu_item" href="#library-card_section-name">Library Card</a></li>
                 </ul>   
             </nav>
             <img src="./images/icon_profile.svg" alt="User profile">
@@ -418,7 +419,35 @@
                 </div>
             </section>
             
-            <section></section>
+            <section class="library-card">
+                <h2 id="library-card_section-name">Digital Library Cards</h2>
+                <div class="library-card_container">
+                    <div class="library-card_find-card_section">
+                        <h3>Find your Library card</h3>
+                        <div class="library-card_find-card_body">
+                            <div class="library-card_find-card_body_brown-background-section">
+                                <h4>Brooklyn Public Library</h4>
+                                <input type="text" name="input_reader-name" placeholder="Reader's name" maxlength="50">
+                                <input type="text" name="input_card-number" placeholder="Card number" maxlength="50">
+                            </div>
+                            
+                            <button>Check the card</button>
+                        </div>
+                    </div>
+
+                    <div class="library-card_get-card_section">
+                        <h5>Get a reader card</h5>
+                        <p>You will be able to see a reader card after logging into 
+                            account or you can register a new account
+                        </p>
+
+                        <div>
+                            <button id="library-card_get-card_sign-up-button">Sign Up</button>
+                            <button id="library-card_get-card_log-in-button">Log in</button>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>

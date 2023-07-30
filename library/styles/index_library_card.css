@@ -1,0 +1,173 @@
+.library-card {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 614px;
+    background-color: #FFFFFF;
+}
+
+/* Styles for h2 headings are described in index.css */
+
+.library-card_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 61px 20px 41px 20px;
+}
+
+.library-card_find-card_section h3 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+.library-card_find-card_body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 600px; 
+    height: 386px; 
+    margin-top: 30px;
+    border: 3px solid #BB945F;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.library-card_find-card_body_brown-background-section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 0;
+    margin: 20px 20px 0px 20px;
+    width: 560px;
+    height: 272px;
+    background: #BB945F;
+}
+
+.library-card_find-card_body_brown-background-section h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;    
+    text-align: left;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+.library-card_find-card_body_brown-background-section input {
+    width: 480px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 0px 20px 25px 20px;
+    padding: 0px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    padding: 8px 20px;
+}
+
+/* .library-card_find-card_body_brown-background-section input:focus {
+    outline: none;
+} */
+
+.library-card_find-card_body button {
+    width: 240px;
+    height: 42px;
+    margin: 20px auto 30px auto;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #0C0C0E;
+
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.library-card_find-card_body button:hover, #library-card_get-card_sign-up-button:hover, 
+    #library-card_get-card_log-in-button:hover {
+    border: 1px solid #BB945F;
+    border-radius: 2px;
+    background: #BB945F;
+}
+
+/* ------------------------------ */
+
+.library-card_get-card_section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    width: 456px;
+    height: 253px;
+}
+
+.library-card_get-card_section h5 {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+.library-card_get-card_section p {
+    margin: 35px 0px 36px auto;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+#library-card_get-card_sign-up-button, #library-card_get-card_log-in-button {
+    width: 73px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+#library-card_get-card_sign-up-button {
+    margin-right: 20px;
+}
