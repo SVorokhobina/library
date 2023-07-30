@@ -1,0 +1,118 @@
+.coffee-shop {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 841px;
+    background-color: #FFFFFF;
+}
+
+/* Styles for h2 headings are described in index.css */
+
+#coffee-shop_text {
+    margin: 61px 20px 0px 20px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.coffee-shop_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+
+.coffee-and-tea, .desserts-and-cakes {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coffee-and-tea h4, .desserts-and-cakes h4 {
+    margin: 0px;
+    padding: 0px;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #BB945F;
+}
+
+.desserts-and-cakes h4 {
+    align-self: flex-end;
+}
+
+.coffee-and-tea_line {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+    width: 438px;
+}
+
+.desserts-and-cakes_line {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-end;
+    margin: 40px 0 0 0;
+    width: 482px;
+}
+
+.coffee-and-tea_item-name {
+    display: inline-block;
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.desserts-and-cakes_item-name {
+    display: inline-block;
+    margin-right: 220px;
+    margin-left: auto;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.coffee-and-tea_item-price, .desserts-and-cakes_item-price {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.coffee-and-tea_item-price::before, .desserts-and-cakes_item-price::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    left: -160px;
+    top: 50%;
+    background-color: #BB945F;
+}
