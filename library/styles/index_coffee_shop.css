@@ -51,7 +51,7 @@
 
 .coffee-and-tea_line {
     display: flex;
-    flex-direction: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin: 40px 0 0 0;
     width: 438px;
@@ -59,7 +59,7 @@
 
 .desserts-and-cakes_line {
     display: flex;
-    flex-direction: row nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
     margin: 40px 0 0 0;
     width: 482px;
