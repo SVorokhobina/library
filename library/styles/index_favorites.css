@@ -27,6 +27,7 @@
 .favorites_buttons-area {
     margin-top: 35px;
     margin-left: 15px;
+    margin-bottom: 34px;
 }
 
 .favorites_single-button-container {
@@ -120,7 +121,7 @@ To show the indicator when the radio button is checked
     flex-shrink: 0;
     width: 590px;
     height: 555px;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .favorites_book-container img {
@@ -142,7 +143,7 @@ To show the indicator when the radio button is checked
 .favorites_staff-picks {
     position: relative;
     margin-top: 15px;
-    margin-left: 20px;    
+    margin-left: 19px;    
     font-family: Forum;
     font-size: 20px;
     font-style: normal;
@@ -165,7 +166,7 @@ To show the indicator when the radio button is checked
 
 .book_name {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 19px;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -177,7 +178,7 @@ To show the indicator when the radio button is checked
 }
 
 .book_auther {
-    margin-left: 20px;
+    margin-left: 19px;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -207,7 +208,7 @@ To show the indicator when the radio button is checked
 .book_buy-button {
     width: 73px;
     height: 28px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 20px;
     border: 1px solid #0C0C0E;
     border-radius: 2px;
@@ -234,7 +235,7 @@ To show the indicator when the radio button is checked
 .book_own-button {
     width: 73px;
     height: 28px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 20px;
     border: 1px solid #BB945F;
     border-radius: 2px;
