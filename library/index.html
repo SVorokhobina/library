@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Brooklyn Public Library</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Forum">
 
     <link rel="stylesheet" href="index.css">
@@ -12,32 +16,48 @@
     <link rel="stylesheet" href="./styles/index_coffee_shop.css">
     <link rel="stylesheet" href="./styles/index_contacts.css">
     <link rel="stylesheet" href="./styles/index_library_card.css">
-    <link rel="stylesheet" href="./styles/index_footer.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/index_footer.css">    
 </head> 
     
 <body>
-    <div class="project-container">
-        <header>
+    <header>
+        <div class="header-content_wrapper">
             <h1>Brooklyn Public Library</h1>
             <nav>
-                <ul class="header_menu">
-                    <li class="header_menu_gap-required"><a class="header_menu_item" href="#about_section-name">About</a></li>
-                    <li class="header_menu_gap-required"><a class="header_menu_item" href="#favorites_section-name">Favorites</a></li>
-                    <li class="header_menu_gap-required"><a class="header_menu_item" href="#coffee-shop_section-name">Coffee shop</a></li>
-                    <li class="header_menu_gap-required"><a class="header_menu_item" href="#contacts_section-name">Contacts</a></li>
-                    <li><a class="header_menu_item" href="#library-card_section-name">Library Card</a></li>
+                <ul class="header_horizontal-menu">
+                    <li><a class="header_horizontal-menu_item" href="#about_section-name">About</a></li>
+                    <li><a class="header_horizontal-menu_item" href="#favorites_section-name">Favorites</a></li>
+                    <li><a class="header_horizontal-menu_item" href="#coffee-shop_section-name">Coffee shop</a></li>
+                    <li><a class="header_horizontal-menu_item" href="#contacts_section-name">Contacts</a></li>
+                    <li><a class="header_horizontal-menu_item" href="#library-card_section-name">Library Card</a></li>
                 </ul>   
             </nav>
-            <img src="./images/icon_profile.svg" alt="User profile">
-        </header>
+            <img src="./images/svg-icons/header_profile_icon.svg" alt="User profile icon">
+            <div class="header_dropdown-menu">
+                <div class="header_dropdown-menu_button" onclick="toggleMenu()">
+                    <img id="header_dropdown-menu_icon" src="./images/svg-icons/header_dropdown_menu_closed.svg">
+                </div>    
+                <ul class="header_dropdown-menu_content">
+                    <li><a class="header_dropdown-menu_item" href="#about_section-name">About</a></li>
+                    <li><a class="header_dropdown-menu_item" href="#favorites_section-name">Favorites</a></li>
+                    <li><a class="header_dropdown-menu_item" href="#coffee-shop_section-name">Coffee shop</a></li>
+                    <li><a class="header_dropdown-menu_item" href="#contacts_section-name">Contacts</a></li>
+                    <li><a class="header_dropdown-menu_item" href="#library-card_section-name">Library Card</a></li>
+                </ul>
+            </div>
+        <div>
+    </header>
+
+
+
 
         <main>
+            <!--
             <section class="welcome">
                 <h3 id="welcome_placard">Welcome<br>to the Brooklyn<br>Library</h3>
-            </section>
+            </section>-->
 
+            <!--
             <section class="about">
                 <h2 id="about_section-name">About</h2>
                 <div id="about_text">The Brooklyn Library is a free workspace, a large number of books 
@@ -58,8 +78,9 @@
                         <div class="about_carousel_pagination_button"></div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
+            <!--
             <section class="favorites">
                 <h2 id="favorites_section-name">Favorites</h2>
                 
@@ -148,7 +169,7 @@
                         <img src="./images/book-covers/book_cover_The_Last_Queen.png" alt="The Last Queen">
                     </div>
                     
-                    <!-- Books not shown -->
+                    
                     <div class="favorites_book-container books_not-shown">
                         <div class="favorites_book_framed-description">
                             <div class="favorites_staff-picks">Staff Picks</div>
@@ -327,8 +348,9 @@
                         <img src="./images/book-covers/book_cover_Slug_And_Other_Stories.png" alt="Slug: And Other Stories">
                     </div>
                 </div>
-            </section>
-
+            </section>-->
+            
+            <!--
             <section class="coffee-shop">
                 <h2 id="coffee-shop_section-name">Coffee Shop</h2>
                 <div id="coffee-shop_text">In our library, we have of cozy coffee 
@@ -394,8 +416,9 @@
                         </div>
                     </div>  
                 </div>
-            </section>
+            </section>-->
 
+            <!--
             <section class="contacts">
                 <h2 id="contacts_section-name">Our Contacts</h2>
                 <div class="contacts_container">
@@ -418,7 +441,9 @@
                     <img src="./images/contacts_map.png" alt="map">
                 </div>
             </section>
+            -->
             
+            <!--
             <section class="library-card">
                 <h2 id="library-card_section-name">Digital Library Cards</h2>
                 <div class="library-card_container">
@@ -448,9 +473,11 @@
                     </div>
                 </div>
             </section>
+            -->
         </main>
 
-        <footer>
+        
+        <!--<footer>
             <div class="footer_top-flex-container">
                 <div class="footer_top-flex-container-1">
                     <a id="footer_address" href="https://goo.gl/maps/Rw74QP2L47at1c319" target="_blank">
@@ -498,9 +525,11 @@
                 </a>
             </div>
 
-        </footer>
-    </div>
+        </footer>-->
+       
+
 
     <script src="index.js"></script>
+    <script src="./js/dropdown_menu_toggle.js"></script>
 </body>
 </html>

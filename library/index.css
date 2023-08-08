@@ -2,17 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    background-color: lightgrey;
+* {
+    box-sizing: border-box;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 1440px;
-    height: auto;
+body {
+    margin: 0;
 }
 
 /*Styles for h2 headings in main sections About, Favorites, 

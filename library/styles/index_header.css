@@ -1,14 +1,22 @@
 header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
     height: 90px;
     background-color: #0C0C0E;
 }
 
+.header-content_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: blue;
+}
+
 h1 {
     display: inline-block;
-    margin-left: 20px;
+    flex-shrink: 0;
+    margin-right: auto;
     font-family: Forum;
     font-size: 30px;
     font-style: normal;
@@ -20,11 +28,10 @@ h1 {
 
 nav {
     display: inline-block;
-    height: 50px;
-    margin-left: auto;
+    margin-right: 40px;
 }
 
-.header_menu {
+.header_horizontal-menu {
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -33,7 +40,16 @@ nav {
     list-style-type: none;
 }
 
-.header_menu_item {
+.header_horizontal-menu li {
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.header_horizontal-menu li:last-child {
+    margin-right: 0px;
+}
+
+.header_horizontal-menu_item {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -41,27 +57,104 @@ nav {
     line-height: 50px;
 }
 
-.header_menu_gap-required {
-    margin-right: 30px;
-}
-
-.header_menu_item:link, .header_menu_item:visited {
+.header_horizontal-menu_item:link, .header_horizontal-menu_item:visited {
     color: #FFFFFF;
     cursor: pointer;
     text-decoration-line: none;
 }
 
-.header_menu_item:hover {
+.header_horizontal-menu_item:hover  {
     color: #FFFFFF;
     text-decoration-line: underline;
 }
-  
-.header_menu_item:active {
+
+.header_horizontal-menu_item:active {
     color: #FFFFFF;
     text-decoration: underline;
 }
 
 header img {
-    margin-right: 20px;
-    margin-left: 40px;
+    margin: 0px;
 }
+
+.header_dropdown-menu {
+    display: none;
+    position: relative;
+}
+
+.header_dropdown-menu_button {
+    width: 45px;
+    height: 32px;
+    margin: auto 0px auto 40px;
+    background-color: violet;
+}
+
+#header_dropdown-menu_icon {
+    margin-top: 5px;
+}
+
+#header_dropdown-menu_icon:hover {
+    cursor: pointer;
+}
+  
+.header_dropdown-menu_content {
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: absolute;
+    width: 332px;
+    height: 480px;
+    margin: 0px;
+    padding: 10px 0 0 0;
+    top: 61px;
+    left: -227px;
+    background-color: lightgreen;
+    z-index: 10;
+    list-style-type: none;
+}
+
+.header_dropdown-menu_content li {
+    margin-bottom: 30px;
+}
+
+.header_dropdown-menu_item {
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.header_dropdown-menu_item:link, .header_horizontal-menu_item:visited {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.header_dropdown-menu_item:hover {
+    color: #FFFFFF;
+    text-decoration-line: underline;
+}
+
+.header_dropdown-menu_item:active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+/* --------------- For clickable dropdown menu --------------- */
+.showMenu {
+    display: flex;
+}
+  
+/*.dropdown_open_style {
+    color: #ffffff;
+  }*/
+
+@media all and (max-width: 1024px) {
+    nav {display: none;}
+    .header_dropdown-menu {display: inline-block;}
+}
+
