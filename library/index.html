@@ -48,14 +48,12 @@
         <div>
     </header>
 
-
-
-
-        <main>
-            <!--
-            <section class="welcome">
-                <h3 id="welcome_placard">Welcome<br>to the Brooklyn<br>Library</h3>
-            </section>-->
+    <main>
+        <section class="welcome">
+            <div class="welcome-content_wrapper">
+                <h3 id="welcome_placard">Welcome to&nbsp;the&nbsp;Brooklyn Library</h3>
+            </div>    
+        </section>
 
             <!--
             <section class="about">
@@ -443,14 +441,15 @@
             </section>
             -->
             
-            <!--
-            <section class="library-card">
+        
+        <section class="library-card">
+            <div class="library-card-content_wrapper">
                 <h2 id="library-card_section-name">Digital Library Cards</h2>
                 <div class="library-card_container">
                     <div class="library-card_find-card_section">
                         <h3>Find your Library card</h3>
                         <div class="library-card_find-card_body">
-                            <div class="library-card_find-card_body_brown-background-section">
+                            <div class="library-card_find-card_input-form">
                                 <h4>Brooklyn Public Library</h4>
                                 <input type="text" name="input_reader-name" placeholder="Reader's name" maxlength="50">
                                 <input type="text" name="input_card-number" placeholder="Card number" maxlength="50">
@@ -461,7 +460,7 @@
                     </div>
 
                     <div class="library-card_get-card_section">
-                        <h5>Get a reader card</h5>
+                        <h3>Get a reader card</h3>
                         <p>You will be able to see a reader card after logging into 
                             account or you can register a new account
                         </p>
@@ -472,41 +471,39 @@
                         </div>                        
                     </div>
                 </div>
-            </section>
-            -->
-        </main>
-
+            </div>    
+        </section>        
+    </main>
         
-        <!--<footer>
-            <div class="footer_top-flex-container">
-                <div class="footer_top-flex-container-1">
+    <footer>
+        <div class="footer-content_wrapper">
+            <div class="footer_top">
+                <div class="footer_top-left">
                     <a id="footer_address" href="https://goo.gl/maps/Rw74QP2L47at1c319" target="_blank">
-                        286 Cadman Plaza, New York, <br>NY 11238, United States
+                        286 Cadman Plaza, New York,<br>NY 11238, United States
                     </a>
-
-                    <div id="footer_work-hours_weekdays">
-                        Mon - Fri<br>08:00 am - 07:00 pm
-                    </div>
-                </div>
-                <div class="footer_top-flex-container-2">
                     <ul class="footer_social-media">
-                        <li id="footer_social-media_twitter">
+                        <li>
                             <a href="https://twitter.com/" target="_blank">
                                 <img src="./images/twitter-icon.svg" alt="Twitter">
                             </a>
                         </li>
-                        <li id="footer_social-media_instagram">
+                        <li>
                             <a href="https://www.instagram.com/rsschool_news/" target="_blank">
                                 <img src="./images/instagram-icon.svg" alt="Instagram">
                             </a>
                         </li>
-                        <li id="footer_social-media_facebook">
+                        <li>
                             <a href="https://www.facebook.com/RollingScopesSchool" target="_blank">
                                 <img src="./images/facebook-icon.svg" alt="Facebook">
                             </a>
                         </li>
                     </ul>
-
+                </div>
+                <div class="footer_top-right">
+                    <div id="footer_work-hours_weekdays">
+                        Mon - Fri<br>08:00 am - 07:00 pm
+                    </div>
                     <div id="footer_work-hours_weekends">
                         Sat - Sun<br>10:00 am - 06:00 pm
                     </div>
@@ -515,7 +512,7 @@
 
             <div id="footer_decor-line"></div>
 
-            <div class="footer_bottom-flex-container">
+            <div class="footer_bottom">
                 <span id="footer_year">2023</span>
                 <a id="footer_school" href="https://rs.school/js-stage0/" target="_blank">
                     The&nbsp;Rolling&nbsp;Scopes&nbsp;School
@@ -524,11 +521,9 @@
                     SVorokhobina
                 </a>
             </div>
-
-        </footer>-->
-       
-
-
+        </div>
+    </footer>
+    
     <script src="index.js"></script>
     <script src="./js/dropdown_menu_toggle.js"></script>
 </body>

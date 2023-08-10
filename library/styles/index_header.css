@@ -1,5 +1,4 @@
 header {
-    height: 90px;
     background-color: #0C0C0E;
 }
 
@@ -8,9 +7,9 @@ header {
     flex-flow: row nowrap;
     align-items: center;
     max-width: 1440px;
+    height: 90px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: blue;
 }
 
 h1 {
@@ -108,7 +107,7 @@ header img {
     padding: 10px 0 0 0;
     top: 61px;
     left: -227px;
-    background-color: lightgreen;
+    background-color: #000000;
     z-index: 10;
     list-style-type: none;
 }

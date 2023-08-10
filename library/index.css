@@ -16,10 +16,7 @@ h2 {
     display: inline-block;
     position: relative;
     padding: 0px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
+    margin: 20px auto 0px auto;
     font-family: Forum;
     font-size: 40px;
     font-style: normal;
@@ -35,7 +32,7 @@ h2::after {
     width: 50px;
     height: 1px;
     bottom: -20px;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, 0%);
     background-color: #0C0C0E;
 }
