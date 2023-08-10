@@ -1,8 +1,12 @@
 .coffee-shop {
+    background-color: #FFFFFF;
+}
+
+.coffee-shop-content_wrapper {
     display: flex;
     flex-flow: column nowrap;
-    height: 841px;
-    background-color: #FFFFFF;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Styles for h2 headings are described in index.css */
@@ -29,7 +33,7 @@
 .coffee-and-tea, .desserts-and-cakes {
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    flex-shrink: 0;
 }
 
 .coffee-and-tea h4, .desserts-and-cakes h4 {
@@ -115,4 +119,18 @@
     left: -160px;
     top: 50%;
     background-color: #BB945F;
+}
+
+@media (max-width: 1024px) {
+    .coffee-shop_menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .coffee-and-tea {
+        align-self: flex-start;
+    }
+    .desserts-and-cakes {
+        align-self: flex-end;
+        margin: 40px 0px 0px auto;
+    }
 }
