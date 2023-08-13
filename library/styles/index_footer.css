@@ -1,148 +1,127 @@
 footer {
-    height: 250px;
     background-color: #0C0C0E;
 }
 
-.footer_top-flex-container {
+.footer-content_wrapper {
     display: flex;
-    flex-direction: column;
-    width: 1400px;
-    height: 90px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    flex-flow: column nowrap;    
+    max-width: 1440px;
+    margin: 0px auto;
 }
 
-.footer_top-flex-container-1, .footer_top-flex-container-2 {
+.footer_top {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 1400px;
-    height: 40px;    
+    margin: 20px 20px 30px 20px;
+}
+
+.footer_top-left {
+    flex-shrink: 0;
 }
 
 #footer_address {
     display: inline-block;
     flex-shrink: 0;
-    width: 229px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-}
-
-#footer_address:link, #footer_address:visited {
-    color: #FFFFFF;
-    cursor: pointer;
-    text-decoration-line: none;
-}
-
-#footer_address:hover {
-    color: #FFFFFF;
-    text-decoration-line: underline;
-}
-  
-#footer_address:active {
-    color: #FFFFFF;
-    text-decoration: underline;
-}
-
-#footer_work-hours_weekdays, #footer_work-hours_weekends {
-    display: inline-block;
-    width: 149px;
-    color: #FFFFFF;
-    text-align: right;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;    
-}
-
-.footer_top-flex-container-2 {
-    margin-top: 10px;
 }
 
 .footer_social-media {
     display: flex;
     flex-direction: row;
     align-self: center;
-    width: 102px;
-    height: 24px;
     padding: 0;
-    margin: 0;
+    margin: 18px 0 0 0;
     list-style-type: none;
 }
 
-#footer_social-media_twitter {
-    margin-left: 0px;
+.footer_social-media li {
+    margin-right: 15px;
 }
 
-#footer_social-media_instagram, #footer_social-media_facebook {
-    margin-left: 15px;
+.footer_social-media li:last-child {
+    margin-right: 0px;
 }
 
-/* ----- Footer White Decorative line ----- */
+.footer_top-right {
+    flex-shrink: 0;
+    text-align: right;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#footer_work-hours_weekdays {
+    margin-bottom: 10px;
+}
 
 #footer_decor-line {
     width: auto;
     height: 1px;
-    margin: 30px 20px auto 20px;
+    margin: 0px 20px 0px 20px;
     background-color: #FFFFFF;
 }
 
-/* ----- Bottom Footer Container ----- */
-
-.footer_bottom-flex-container {
+.footer_bottom {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
-    height: 22px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 44px;
-
+    margin: 44px 20px;
     text-align: center;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
+    color: #FFFFFF; 
 }
 
 #footer_year {
     display: inline-block;
+    flex-shrink: 0;
     width: 160px;
     text-align: left;
-    color: #FFFFFF;
 }
 
 #footer_school {
     display: inline-block;
-    width: 300px;
+    flex-shrink: 0;
 }
 
-#footer_school:link, #footer_school:visited, #footer_author:link, #footer_author:visited {
+#footer_author {
+    display: inline-block;
+}
+
+#footer_address:link, #footer_address:visited, 
+#footer_school:link, #footer_school:visited, 
+#footer_author:link, #footer_author:visited {
     color: #FFFFFF;
     cursor: pointer;
     text-decoration-line: none;
 }
 
-#footer_school:hover, #footer_author:hover {
+#footer_address:hover, 
+#footer_school:hover, 
+#footer_author:hover {
     color: #FFFFFF;
     text-decoration-line: underline;
 }
   
-#footer_school:active, #footer_author:active {
+#footer_address:active,
+#footer_school:active, 
+#footer_author:active {
     color: #FFFFFF;
     text-decoration: underline;
 }
 
-#footer_author {
-    display: inline-block;
-    width: 160px;
-    text-align: right;
+@media (max-width: 1024px) {
+    #footer_year {width: 56px;}
 }
