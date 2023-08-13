@@ -1,26 +1,25 @@
 .contacts {
+    background-color: #FFFFFF;
+}
+
+.contacts-content_wrapper {
     display: flex;
     flex-flow: column nowrap;
-    height: 575px;
-    background-color: #FFFFFF;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Styles for h2 headings are described in index.css */
 
 .contacts_container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin: 61px 20px 40px 20px;
 }
 
-.contacts_container img {
-    width: 696px;
-    height: 414px;
-}
-
-.contact_details {
+.contact_info {
     display: flex;
     flex-flow: column nowrap;
     width: 505px;
@@ -35,32 +34,63 @@
     color: #000000;
 }
 
-.contact_details a:link, .contact_details a:visited {
+.contact_info a:link, .contact_info a:visited {
     color: #000000;
     cursor: pointer;
     text-decoration-line: none;
 }
 
-.contact_details a:hover {
+.contact_info a:hover {
     color: #000000;
     cursor: pointer;
     text-decoration-line: underline;
 }
 
-.contact_details a:active {
+.contact_info a:active {
     color: #000000;
     text-decoration: underline;
 }
 
-.contacts_phone-info h4, .contacts_senior-staff h4 {
-    margin: 0px;
+.contact_info h4:first-of-type {
+    margin: 0px auto 0px 0px;
     padding: 0px;
     font-weight: 700;
 }
 
-.contacts_phone-info div {
-    margin-top: 40px;
-    margin-bottom: 40px;
+.contact_info h4:last-of-type {
+    margin: 40px auto 0px 0px;
+    padding: 0px;
+    font-weight: 700;
+}
+
+.contact_info p {
+    margin: 20px auto 0px 0px;
     padding: 0px;
     font-weight: 400;
+}
+
+.contact_info p:first-of-type {
+    margin-top: 40px;
+}
+
+.contacts_container img {
+    width: 696px;
+    height: 414px;
+}
+
+@media (max-width: 1261px) {
+    .contacts_container {
+        display: flex;
+        flex-flow: column;
+        margin: 61px 20px 40px 20px;
+    }
+    .contact_info {
+        align-self: flex-start;
+    }
+    .contacts_container img {
+        align-self: center;
+        max-width: 100%;
+        height: auto;
+        margin-top: 100px;            
+    }
 }
