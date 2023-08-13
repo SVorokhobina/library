@@ -37,7 +37,7 @@
                 <div class="header_dropdown-menu_button" onclick="toggleMenu()">
                     <img id="header_dropdown-menu_icon" src="./images/svg-icons/header_dropdown_menu_closed.svg">
                 </div>    
-                <ul class="header_dropdown-menu_content">
+                <ul class="header_dropdown-menu_content" id="toggling_elem">
                     <li><a class="header_dropdown-menu_item" href="#about_section-name">About</a></li>
                     <li><a class="header_dropdown-menu_item" href="#favorites_section-name">Favorites</a></li>
                     <li><a class="header_dropdown-menu_item" href="#coffee-shop_section-name">Coffee shop</a></li>
@@ -62,9 +62,11 @@
                     and a cozy coffee shop inside</div>
 
                 <div class="about_carousel_photos">
+                    <img src="./images/svg-icons/about_carret_left.svg">
                     <div id="about_carousel_photo_1"></div>
                     <div id="about_carousel_photo_2"></div>
                     <div id="about_carousel_photo_3"></div>
+                    <img src="./images/svg-icons/about_carret_right.svg">
                 </div>
 
                 <div class="about_carousel_pagination">
@@ -527,5 +529,6 @@
     
     <script src="index.js"></script>
     <script src="./js/dropdown_menu_toggle.js"></script>
+       
 </body>
 </html>

@@ -38,6 +38,10 @@
     width: 450px;
 }
 
+.about_carousel_photos img {
+    display: none;
+}
+
 #about_carousel_photo_1 {
     background-image: url("../images/about_photos_1_girl.png");
 }
@@ -104,6 +108,13 @@
         display: inline-block;
     }
 
-    .about_carousel_photos {justify-content: center;}
-    #about_carousel_photo_1 {margin: 0px auto;}
+    .about_carousel_photos {
+        justify-content: center;
+        align-items: center;
+    }
+    #about_carousel_photo_1 {margin: 0px 58px;}
+    .about_carousel_photos img {
+        display: inline-block;
+        padding-top: 40px;
+    }
 }
