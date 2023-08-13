@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: column nowrap;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 /* Styles for h2 headings are described in index.css */

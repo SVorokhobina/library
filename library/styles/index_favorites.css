@@ -1,9 +1,12 @@
 .favorites {
+    background-color: #FFFFFF;
+}
+
+.favorites-content_wrapper {
     display: flex;
     flex-flow: column nowrap;
-    width: 1440px;
-    height: 1439px;
-    background-color: #FFFFFF;
+    max-width: 1440px;
+    margin: 0px auto;
 }
 
 /* Styles for h2 headings are described in index.css */
@@ -12,9 +15,9 @@
     margin: 61px 0px 0px 0px;
 }
 
-#favorites_choose-season_header {
+.favorites_choose-season_area h3 {
     padding: 0px;
-    margin: 0px 0px 0px 20px;
+    margin: 0px auto 0px 20px;
     text-align: left;
     font-family: Inter;
     font-size: 20px;
@@ -25,15 +28,18 @@
 }
 
 .favorites_buttons-area {
-    margin-top: 35px;
-    margin-left: 15px;
-    margin-bottom: 34px;
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 695px;
+    justify-content: space-between;
+    margin: 35px 0px 35px 15px;
 }
 
 .favorites_single-button-container {
     display: inline-block;
     position: relative;
-    padding: 5px 10px 5px 42px;
+    min-width: 123px;
+    padding: 5px 0px 5px 42px;
     cursor: pointer;
     font-family: Inter;
     font-size: 20px;
@@ -53,19 +59,19 @@
 }
 
 /* To create custom radio buttons */
-.season_checkmark {
+.choose-season_checkmark {
     position: absolute;
     top: 10px;
     left: 5px;
-    height: 13px;
-    width: 13px;
+    height: 17px;
+    width: 17px;
     border-radius: 50%;
     border: 2px solid #000000; 
     background-color: #FFFFFF;    
 }
 
-/* To create the [display: none] indicator inside the radio button */
-.season_checkmark:after {
+/* To create the dot indicator inside the chosen radio button */
+.choose-season_checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -76,35 +82,24 @@
     border-radius: 50%;
 }
 
-/* Temporary solution starts; to be replaced later with JS */
-#winter .season_checkmark:after {
-    display: block;
-    background: #000000;
-}
-
-#winter {
-    font-weight: 700;
-}
-
-#winter, #spring, #summer {
-    margin-right: 70px;
-}
-/* Temporary solution ends */
-
-
-/* To finish later with JS*/
-/* To show the indicator inside the radio button when the mouse is hovered
-.favorites_single-button-container:hover input ~ .season_checkmark:after {
+/* To show the indicator inside the radio button when the mouse is hovered */
+.favorites_single-button-container:hover input ~ .choose-season_checkmark:after {
     display: block;
     background: #bababa;
 }
   
-To show the indicator when the radio button is checked
-.favorites_single-button-container input:checked ~ .season_checkmark:after {
+/* To show the indicator when the radio button is checked */
+.favorites_single-button-container input:checked ~ .choose-season_checkmark:after {
     display: block;
     background: #000000;
-} */
+} 
 
+/* Probably, to change the solution using JS */
+.favorites_single-button-container:has(input:checked) {
+    font-weight: 700;
+} 
+
+/* ----------------------------------------------------- */
 
 .favorites_books {
     display: flex;
@@ -133,17 +128,16 @@ To show the indicator when the radio button is checked
     z-index: 10;
 }
 
-.favorites_book_framed-description {
-    width: 548px;
-    height: 553px;
+.favorites_book_frame {
+    width: 550px;
+    height: 555px;
     margin: 0px;
     border: 1px solid #000000;
 }
 
-.favorites_staff-picks {
+.favorites_book_frame h4 {
     position: relative;
-    margin-top: 15px;
-    margin-left: 19px;    
+    margin: 15px auto 0px 20px;   
     font-family: Forum;
     font-size: 20px;
     font-style: normal;
@@ -154,7 +148,7 @@ To show the indicator when the radio button is checked
     color: #000000;
 }
 
-.favorites_staff-picks::after {
+.favorites_book_frame h4::after {
     content: "";
     position: absolute;
     top: 40px;
@@ -166,7 +160,7 @@ To show the indicator when the radio button is checked
 
 .book_name {
     margin-top: 20px;
-    margin-left: 19px;
+    margin-left: 20px;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -178,7 +172,7 @@ To show the indicator when the radio button is checked
 }
 
 .book_auther {
-    margin-left: 19px;
+    margin-left: 20px;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -189,7 +183,7 @@ To show the indicator when the radio button is checked
     color: #000000;
 }
 
-.book_description {
+.favorites_book_frame p {
     width: 356px;
     height: 320px;
     margin-top: 20px;
@@ -213,7 +207,6 @@ To show the indicator when the radio button is checked
     border: 1px solid #0C0C0E;
     border-radius: 2px;
     background-color: #FFFFFF;
-    
     color: #0C0C0E;
     text-align: center;
     font-family: Inter;
@@ -222,7 +215,6 @@ To show the indicator when the radio button is checked
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1px;
-
     cursor: pointer;
 }
 
@@ -230,6 +222,7 @@ To show the indicator when the radio button is checked
     border: 1px solid #BB945F;
     border-radius: 2px;
     background: #BB945F;
+    transition: .3s ease-in-out;
 }
 
 .book_own-button {
@@ -239,8 +232,7 @@ To show the indicator when the radio button is checked
     margin-left: 20px;
     border: 1px solid #BB945F;
     border-radius: 2px;
-    background-color: #FFFFFF;
-    
+    background-color: #FFFFFF;    
     color: #BB945F;
     text-align: center;
     font-family: Inter;
@@ -249,10 +241,17 @@ To show the indicator when the radio button is checked
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1px;
-
     cursor: text;
 }
 
 .books_not-shown {
     display: none;
+}
+
+@media (max-width: 1260px) {
+    .favorites_books {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 }
