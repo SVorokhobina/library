@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Forum">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/index_header.css">
     <link rel="stylesheet" href="./styles/index_welcome.css">
     <link rel="stylesheet" href="./styles/index_about.css">
@@ -62,28 +62,44 @@
                     and a cozy coffee shop inside</div>
 
                 <div class="about_carousel_photos">
-                    <img src="./images/svg-icons/about_carret_left.svg">
-                    <div id="about_carousel_photo_1"></div>
-                    <div id="about_carousel_photo_2"></div>
-                    <div id="about_carousel_photo_3"></div>
-                    <img src="./images/svg-icons/about_carret_right.svg">
+                    <img class="carousel_carret_left arrow_disabled" src="./images/svg-icons/about_carret_left.svg">
+                    <div class="carousel_window">
+                        <div class="carousel_photo-train">
+                            <div class="carousel_photo-item photo-item_active">
+                                <img src="./images/about-carousel-photos/1_girl.png">
+                            </div>
+                            <div class="carousel_photo-item">
+                                <img src="./images/about-carousel-photos/2_busts.png">
+                            </div>
+                            <div class="carousel_photo-item">
+                                <img src="./images/about-carousel-photos/3_curved-shelves.png">
+                            </div>
+                            <div class="carousel_photo-item">
+                                <img src="./images/about-carousel-photos/4_ladder.png">
+                            </div>
+                            <div class="carousel_photo-item">
+                                <img src="./images/about-carousel-photos/5_columns.png">
+                            </div>
+                        </div>
+                    </div>
+                    <img class="carousel_carret_right" src="./images/svg-icons/about_carret_right.svg">
                 </div>
 
                 <div class="about_carousel_pagination">
-                    <div class="about_pagination-button_clickable-area">
-                        <div class="about_pagination-button about_pagination-button_active"></div>
+                    <div class="about_pagination-button_clickable pagination-button_active" onclick="clickButton(0)">
+                        <div></div>
                     </div>
-                    <div class="about_pagination-button_clickable-area">
-                        <div class="about_pagination-button"></div>
+                    <div class="about_pagination-button_clickable" onclick="clickButton(1)">
+                        <div></div>
                     </div>
-                    <div class="about_pagination-button_clickable-area">
-                        <div class="about_pagination-button"></div>
+                    <div class="about_pagination-button_clickable" onclick="clickButton(2)">
+                        <div></div>
                     </div>
-                    <div class="about_pagination-button_clickable-area">
-                        <div class="about_pagination-button"></div>
+                    <div class="about_pagination-button_clickable" onclick="clickButton(3)">
+                        <div></div>
                     </div>
-                    <div class="about_pagination-button_clickable-area">
-                        <div class="about_pagination-button"></div>
+                    <div class="about_pagination-button_clickable" onclick="clickButton(4)">
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -527,8 +543,9 @@
         </div>
     </footer>
     
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/dropdown_menu_toggle.js"></script>
+    <script src="./js/about_carousel.js"></script>
        
 </body>
 </html>
