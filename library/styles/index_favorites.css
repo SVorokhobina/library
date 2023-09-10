@@ -30,15 +30,14 @@
 .favorites_buttons-area {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 695px;
+    max-width: 708px;
     justify-content: space-between;
-    margin: 35px 0px 35px 15px;
+    margin: 35px 15px 35px 15px;
 }
 
-.favorites_single-button-container {
+.choose_season_button {
     display: inline-block;
     position: relative;
-    min-width: 123px;
     padding: 5px 0px 5px 42px;
     cursor: pointer;
     font-family: Inter;
@@ -50,7 +49,7 @@
 }
 
 /* To hide default radio buttons */
-.favorites_single-button-container input { 
+.choose_season_button input { 
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -83,31 +82,52 @@
 }
 
 /* To show the indicator inside the radio button when the mouse is hovered */
-.favorites_single-button-container:hover input ~ .choose-season_checkmark:after {
+.choose_season_button:hover input ~ .choose-season_checkmark:after {
     display: block;
     background: #bababa;
 }
   
 /* To show the indicator when the radio button is checked */
-.favorites_single-button-container input:checked ~ .choose-season_checkmark:after {
+.choose_season_button input:checked ~ .choose-season_checkmark:after {
     display: block;
     background: #000000;
 } 
 
-/* Probably, to change the solution using JS */
-.favorites_single-button-container:has(input:checked) {
+.choose_season_button:has(input:checked) {
     font-weight: 700;
-} 
+}
 
 /* ----------------------------------------------------- */
 
 .favorites_books {
     display: flex;
+    flex-flow: column;
+    height: 1190px;
+    margin: 0px 20px;
+    overflow: hidden;
+}
+
+.book_set {
+    display: none;
+    opacity: 0;
+}
+
+.book_set.shown {
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px auto;
+    opacity: 1;
+}
+
+.book_set.next {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0px auto;
+    opacity: 0;    
 }
 
 .favorites_book-container {
@@ -251,7 +271,33 @@
 @media (max-width: 1260px) {
     .favorites_books {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column;
+        align-items: center;
+        height: 2380px;
+    }
+    .book_set.shown,
+    .book_set.next {
+        display: flex;
+        flex-flow: column;
         align-items: center;
     }
+}
+
+.to-fade-out {
+    animation: fade-out 0.5s ease-in-out;
+    /*animation-delay: 1s;*/
+}
+
+.to-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
