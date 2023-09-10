@@ -101,11 +101,18 @@
 
 .favorites_books {
     display: flex;
+    flex-flow: column;
+    height: 1190px;
+    margin: 0px 20px;
+    overflow: hidden;
+}
+
+.book_set {
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px auto;
 }
 
 .favorites_book-container {
@@ -249,33 +256,19 @@
 @media (max-width: 1260px) {
     .favorites_books {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column;
+        align-items: center;
+        height: 2380px;
+    }
+    .book_set {
+        display: flex;
+        flex-flow: column;
         align-items: center;
     }
 }
 
 
-
-
-
-
-
-
-  
-
-
-/* ----------------------------------------------------- */
-
-/*.favorites_books {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    height: 1190px;
-    margin-left: 20px;
-    margin-right: 20px;
-    overflow: hidden;
-}
-
+/*
 .book_set {
     display: none;
     opacity: 0;
@@ -287,152 +280,6 @@
     justify-content: space-between;
     align-content: space-between;
     opacity: 1;   
-}
-
-.favorites_book-container {
-    display: inline-block;
-    position: relative;
-    flex-shrink: 0;
-    width: 590px;
-    height: 555px;
-    margin-bottom: 40px;
-}
-
-.favorites_book-container img {
-    position: absolute;
-    left: 390px;
-    top: 255px;
-    width: 200px;
-    height: 300px;
-    z-index: 10;
-}
-
-.favorites_book_frame {
-    width: 550px;
-    height: 555px;
-    margin: 0px;
-    border: 1px solid #000000;
-}
-
-.favorites_book_frame h4 {
-    position: relative;
-    margin: 15px auto 0px 20px;   
-    font-family: Forum;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    color: #000000;
-}
-
-.favorites_book_frame h4::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    height: 1px;
-    width: 60px;
-    background-color: #BB945F;
-}
-
-.book_name {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.book_auther {
-    margin-left: 20px;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    color: #000000;
-}
-
-.favorites_book_frame p {
-    width: 356px;
-    height: 320px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    color: #000000;
-}
-
-.book_buy-button {
-    width: 73px;
-    height: 28px;
-    margin-top: 16px;
-    margin-left: 20px;
-    border: 1px solid #0C0C0E;
-    border-radius: 2px;
-    background-color: #FFFFFF;
-    color: #0C0C0E;
-    text-align: center;
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.book_buy-button:hover {
-    border: 1px solid #BB945F;
-    border-radius: 2px;
-    background: #BB945F;
-    transition: .3s ease-in-out;
-}
-
-.book_own-button {
-    width: 73px;
-    height: 28px;
-    margin-top: 16px;
-    margin-left: 20px;
-    border: 1px solid #BB945F;
-    border-radius: 2px;
-    background-color: #FFFFFF;    
-    color: #BB945F;
-    text-align: center;
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    cursor: text;
-}
-
-@media (max-width: 1260px) {
-    .favorites_books {
-        height: 2380px;
-    }    
-    
-    .book_set.show {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
 }
 
 .to-fade-in {
