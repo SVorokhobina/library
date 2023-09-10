@@ -30,15 +30,14 @@
 .favorites_buttons-area {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 695px;
+    max-width: 708px;
     justify-content: space-between;
-    margin: 35px 0px 35px 15px;
+    margin: 35px 15px 35px 15px;
 }
 
-.favorites_single-button-container {
+.choose_season_button {
     display: inline-block;
     position: relative;
-    min-width: 123px;
     padding: 5px 0px 5px 42px;
     cursor: pointer;
     font-family: Inter;
@@ -50,7 +49,7 @@
 }
 
 /* To hide default radio buttons */
-.favorites_single-button-container input { 
+.choose_season_button input { 
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -83,21 +82,20 @@
 }
 
 /* To show the indicator inside the radio button when the mouse is hovered */
-.favorites_single-button-container:hover input ~ .choose-season_checkmark:after {
+.choose_season_button:hover input ~ .choose-season_checkmark:after {
     display: block;
     background: #bababa;
 }
   
 /* To show the indicator when the radio button is checked */
-.favorites_single-button-container input:checked ~ .choose-season_checkmark:after {
+.choose_season_button input:checked ~ .choose-season_checkmark:after {
     display: block;
     background: #000000;
 } 
 
-/* Probably, to change the solution using JS */
-.favorites_single-button-container:has(input:checked) {
+.choose_season_button:has(input:checked) {
     font-weight: 700;
-} 
+}
 
 /* ----------------------------------------------------- */
 
@@ -255,3 +253,204 @@
         align-items: center;
     }
 }
+
+
+
+
+
+
+
+
+  
+
+
+/* ----------------------------------------------------- */
+
+/*.favorites_books {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 1190px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.book_set {
+    display: none;
+    opacity: 0;
+}
+
+.book_set.shown {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    opacity: 1;   
+}
+
+.favorites_book-container {
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    width: 590px;
+    height: 555px;
+    margin-bottom: 40px;
+}
+
+.favorites_book-container img {
+    position: absolute;
+    left: 390px;
+    top: 255px;
+    width: 200px;
+    height: 300px;
+    z-index: 10;
+}
+
+.favorites_book_frame {
+    width: 550px;
+    height: 555px;
+    margin: 0px;
+    border: 1px solid #000000;
+}
+
+.favorites_book_frame h4 {
+    position: relative;
+    margin: 15px auto 0px 20px;   
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.favorites_book_frame h4::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    height: 1px;
+    width: 60px;
+    background-color: #BB945F;
+}
+
+.book_name {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.book_auther {
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.favorites_book_frame p {
+    width: 356px;
+    height: 320px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.book_buy-button {
+    width: 73px;
+    height: 28px;
+    margin-top: 16px;
+    margin-left: 20px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.book_buy-button:hover {
+    border: 1px solid #BB945F;
+    border-radius: 2px;
+    background: #BB945F;
+    transition: .3s ease-in-out;
+}
+
+.book_own-button {
+    width: 73px;
+    height: 28px;
+    margin-top: 16px;
+    margin-left: 20px;
+    border: 1px solid #BB945F;
+    border-radius: 2px;
+    background-color: #FFFFFF;    
+    color: #BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    cursor: text;
+}
+
+@media (max-width: 1260px) {
+    .favorites_books {
+        height: 2380px;
+    }    
+    
+    .book_set.show {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.to-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.to-fade-out {
+    animation: fade-out 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}*/
