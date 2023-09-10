@@ -111,19 +111,19 @@
                 <div class="favorites_choose-season_area">
                     <h3>Pick favorites of season</h3>
                     <div class="favorites_buttons-area">
-                        <label class="choose_season_button winter">Winter
+                        <label class="choose_season_button winter" onclick="chooseSeason_winter()">Winter
                             <input type="radio" name="season_favorites" checked="checked">
                             <span class="choose-season_checkmark"></span>
                         </label>
-                        <label class="choose_season_button spring">Spring
+                        <label class="choose_season_button spring" onclick="chooseSeason_spring()">Spring
                             <input type="radio" name="season_favorites">
                             <span class="choose-season_checkmark"></span>
                         </label>
-                        <label class="choose_season_button summer">Summer
+                        <label class="choose_season_button summer" onclick="chooseSeason_summer()">Summer
                             <input type="radio" name="season_favorites">
                             <span class="choose-season_checkmark"></span>
                         </label>
-                        <label class="choose_season_button autumn">Autumn
+                        <label class="choose_season_button autumn" onclick="chooseSeason_autumn()">Autumn
                             <input type="radio" name="season_favorites">
                             <span class="choose-season_checkmark"></span>
                         </label>
@@ -131,7 +131,7 @@
                 </div>
 
                 <div class="favorites_books">
-                    <div class="book_set winter">
+                    <div class="book_set winter shown">
                         <div class="favorites_book-container" id="favorites_book-1">
                             <div class="favorites_book_frame">
                                 <h4>Staff Picks</h4>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
 
-                    <div class="book_set spring books_not-shown">
+                    <div class="book_set spring">
                         <div class="favorites_book-container">
                             <div class="favorites_book_frame">
                                 <h4>Staff Picks</h4>
@@ -255,7 +255,7 @@
                         </div>
                     </div>    
 
-                    <div class="book_set summer books_not-shown">    
+                    <div class="book_set summer">    
                         <div class="favorites_book-container">
                             <div class="favorites_book_frame">
                                 <h4>Staff Picks</h4>
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                     
-                    <div class="book_set autumn books_not-shown">
+                    <div class="book_set autumn">
                         <div class="favorites_book-container">
                             <div class="favorites_book_frame">
                                 <h4>Staff Picks</h4>

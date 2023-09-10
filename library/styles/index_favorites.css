@@ -108,11 +108,26 @@
 }
 
 .book_set {
+    display: none;
+    opacity: 0;
+}
+
+.book_set.shown {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
     margin: 0px auto;
+    opacity: 1;
+}
+
+.book_set.next {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0px auto;
+    opacity: 0;    
 }
 
 .favorites_book-container {
@@ -260,36 +275,21 @@
         align-items: center;
         height: 2380px;
     }
-    .book_set {
+    .book_set.shown,
+    .book_set.next {
         display: flex;
         flex-flow: column;
         align-items: center;
     }
 }
 
-
-/*
-.book_set {
-    display: none;
-    opacity: 0;
-}
-
-.book_set.shown {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    opacity: 1;   
+.to-fade-out {
+    animation: fade-out 0.5s ease-in-out;
+    /*animation-delay: 1s;*/
 }
 
 .to-fade-in {
     animation: fade-in 0.5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.to-fade-out {
-    animation: fade-out 0.5s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 @keyframes fade-out {
@@ -300,4 +300,4 @@
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}
-}*/
+}
